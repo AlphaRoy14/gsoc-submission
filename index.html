@@ -9,7 +9,7 @@
         <meta name="viewport" content="width=device-width,initial-scale=1">
 
         <title>GSoC</title>
-        <meta name="description" content="">
+        <meta name="GSoC Report" content="Final Report">
 
         <!-- The compiled CSS file -->
         <link rel="stylesheet" href="css/production.css">
@@ -28,14 +28,8 @@
     <!-- Header -->
     <header class="align--center pt3">
         <div class="container--lg border--bottom pb3">
-            <!-- <img class="logo mb3 reveal-on-scroll is-revealing" src="img/logo.jpeg" alt="Carta"> -->
-            <h1 class="mb2">GSoC&nbsp;Final Submission</h1>
-            <!-- <span>
-                <a href="https://www.apple.com/ios/app-store/" class="link"><img class="download" src="img/ios.png" alt="Download on the App Store"></a>
-            </span>
-            <span>
-                <a href="https://play.google.com/store" class="link"><img class="download" src="img/googleplay.png" alt="Download on Google Play"></a>
-            </span> -->
+            <h1 class="mb2">GSoC Final Submission</h1>
+
         </div>
     </header>
 
@@ -44,31 +38,7 @@
         <!-- Feature list -->
         <div class="container pt3 mt2 text--gray align--center">
             <p class="mb3">This page describes the work I have done over three months (June - September) for <a class="link" href="https://github.com/deepmind/kapitan">deepmind/kapitan</a> as a student in GSoC 2020. Pawel and Ricado warmly mentored me during the course of my work.</p>
-            <!-- <div class="grid-row">
-                <div class="grid-column span-one-third mb3 reveal-on-scroll is-revealing">
-                    <img class="illustration--small mb1" src="img/assign.svg" alt="Assign to others">
-                    <p>Assign to others</p>
-                </div>
-                <div class="grid-column span-one-third mb3 reveal-on-scroll is-revealing">
-                    <img class="illustration--small mb1" src="img/connected.svg" alt="Stay connected">
-                    <p>Stay connected</p>
-                </div>
-                <div class="grid-column span-one-third mb3 reveal-on-scroll is-revealing">
-                    <img class="illustration--small mb1" src="img/search.svg" alt="Powerful search">
-                    <p>Powerful search</p>
-                </div>
-                <div class="grid-column span-one-third mb3 reveal-on-scroll is-revealing">
-                    <img class="illustration--small mb1" src="img/vault.svg" alt="Put in a vault">
-                    <p>Put in a vault</p>
-                </div>
-                <div class="grid-column span-one-third mb3 reveal-on-scroll is-revealing">
-                    <img class="illustration--small mb1" src="img/messaging.svg" alt="Fast messaging">
-                    <p>Fast messaging</p>
-                </div>
-                <div class="grid-column span-one-third mb3 reveal-on-scroll is-revealing">
-                    <img class="illustration--small mb1" src="img/mail.svg" alt="Share with others">
-                    <p>Share with others</p>
-                </div> -->
+
             </div>
         </div>
 
@@ -79,9 +49,13 @@
                 <div class="grid-column mt3 mb2 order-2">
                     <div class="border--bottom pb2 mb2">
                         <h2>Task 1: Remote Inventory Federation</h2>
-                        <p>This feature allows kapitan to fetch inventory items from remote sources during compile time recursively. The original issue can be viewed <a class="link" href="https://github.com/deepmind/kapitan/issues/436">here</a>. The documentation can be viewed <a class="link" href="https://github.com/deepmind/kapitan/pull/593">here</a>. </p>
+                        <p>This feature allows kapitan to fetch inventory items from remote sources during compile time recursively. The original issue can be viewed <a class="link" href="https://github.com/deepmind/kapitan/issues/436">here</a>.</p>
+                        <p class="italic text--gray mb1">The <strong>documentation</strong> can be viewed <a class="link" href="https://github.com/deepmind/kapitan/pull/593">here</a>
+                        and the <strong>code</strong> can be found on <a class="link" href="https://github.com/deepmind/kapitan/pull/521">this</a> and <a class="link" href="https://github.com/deepmind/kapitan/pull/574">this</a> PR on GitHub.</p>
+                        </p>
+                        <!-- <p class="italic text--gray mb1">The <strong>code</strong> can be found on <a class="link" href="https://github.com/deepmind/kapitan/pull/521">this</a> and <a class="link" href="https://github.com/deepmind/kapitan/pull/574">this</a> PR on GitHub.</p> -->
                     </div>
-                    <p class="italic text--gray mb1">The <strong>code</strong> can be found on <a class="link" href="https://github.com/deepmind/kapitan/pull/521">this</a> and <a class="link" href="https://github.com/deepmind/kapitan/pull/574">this</a> PR on GitHub.</p>
+                    <p>Contributing to this task made me more aware of opensource best practices and made me more efficient in debugging. Few issues related to Python & Golangs' environment configuration accompanied by slow download speed impeded my ability to test the code. I overcame this challenge by setting up TravisCI on my GitHub account for testing.</p>
                     <p class="bold">Merged</p>
                 </div>
                 <div class="grid-column span-1"></div>
@@ -99,12 +73,13 @@
                     <div class="border--bottom pb2 mb2">
                         <h2>Task 2: GCP Secret Manager Secret Backend (read-only)</h2>
                         <p>This feature enables kapitan users to access secrets stored in GCP Secret Manager. The original issue can be viewed <a class="link" href="https://github.com/deepmind/kapitan/issues/467">here</a>. </p>
+                        <p class="italic text--gray mb1">The <strong>documentation</strong> and <strong>code</strong> can be found in <a class="link" href="https://github.com/deepmind/kapitan/pull/585">this</a> PR on GitHub.</p>
                         <p>Todo:</p>
                         <ul class="list--indented">
                             <li>This feature can be extended to upload secrets to GCP Secret Manager.</li>
                         </ul>
                     </div>
-                    <p class="italic text--gray mb1">The <strong>documentation</strong> and <strong>code</strong> can be found in <a class="link" href="https://github.com/deepmind/kapitan/pull/585">this</a> PR on GitHub.</p>
+                    <p>The main challenge in this task was to figure out the working of <em>Ref Backends</em> due to its complex yet elegant design. This task made me understand good practices for Object Oriented Design along with the fundaments of GCP API. Furthermore, I also learned about hooks and pyinstaller while tackling a build breaking bug. </p>
                     <p class="bold">Merge pending</p>
                 </div>
             </div>
@@ -113,8 +88,9 @@
                     <div class="border--bottom pb2 mb2">
                         <h2>Task 3: Azure KMS Secret Backend</h2>
                         <p>This feature enables users to use encryption keys from Azure KeyVault to encrypt their secrets locally. The original issue can be viewed <a class="link" href="https://github.com/deepmind/kapitan/issues/366">here</a>. </p>
+                        <p class="italic text--gray mb1">The <strong>documentation</strong> and <strong>code</strong> and be viewed in <a class="link" href="https://github.com/deepmind/kapitan/pull/590">this</a> PR on GitHub.</p>
                     </div>
-                    <p class="italic text--gray mb1">The <strong>documentation</strong> and <strong>code</strong> and be viewed in <a class="link" href="https://github.com/deepmind/kapitan/pull/590">this</a> PR on GitHub.</p>
+                    <p>This task made me realize the subtle difference between the GCP and Azures' services to solve similar problems. </p>
                     <p class="bold">Merge pending</p>
                 </div>
                 <div class="grid-column span-1"></div>
@@ -131,65 +107,20 @@
                     <div class="border--bottom pb2 mb2">
                         <h2>Task 4: Modularize Kapitan</h2>
                         <p>This packages kapitan into essential modules and addon modules for uploading to PyPI. The original issue can be viewed <a class="link" href="https://github.com/deepmind/kapitan/issues/437">here</a>.</p>
+                        <p class="italic text--gray mb1">The <strong>documentation</strong> and  <strong>code</strong> and be viewed in <a class="link" href="https://github.com/deepmind/kapitan/pull/573">this</a> PR on GitHub.</p>
                         <p>Todo:</p>
                         <ul class="list--indented">
                             <li>Make <code class="code rounded">gsm</code> and <code class="code rounded">azkms</code> as addon modules once they are merged.</li>
                         </ul>
-
                     </div>
-                    <p class="italic text--gray mb1"></p>
-                    <p class="italic text--gray mb1">The <strong>documentation</strong> and  <strong>code</strong> and be viewed in <a class="link" href="https://github.com/deepmind/kapitan/pull/573">this</a> PR on GitHub.</p>
+                    <p >This helped me develop a deeper understanding of PyPI packaging and wheels.</p>
                     <p class="bold">Merge pending</p>
                 </div>
 
         </div>
 
-        <!-- Mentioned -->
-        <!-- <div class="container--lg pt3 pb3 mb2 align--center">
-            <p class="mb2">Mentioned in</p>
-            <span><img class="mentioned" src="img/mentioned.svg" alt="New York Times, TC, Product Hunt, Recode"></span>
-        </div> -->
-
-        <!-- CTA -->
-        <!-- <div class="bg--dark-gray align--center pt3 pb3">
-            <div class="container pt2 pb2">
-                <img class="cta-image mb2 reveal-on-scroll is-revealing" src="img/text.svg" alt="Text the app">
-                <p class="h3 text--white mb1 bold">We'll text you the&nbsp;app</p>
-                <p class="text--white mb3">Just insert your number below. Messaging rates&nbsp;apply.</p>
-                <div class="inline-block mr1 no-mr-on-mobile" style="width:280px;max-width:100%">
-                    <input class="form-control" type="tel" placeholder="Phone number">
-                </div>
-                <button class="btn btn--secondary">Send</button>
-            </div>
-        </div> -->
 
     </main>
-
-    <!-- Footer -->
-    <!-- <footer class="pt1 pb3 align--center-on-mobile">
-        <div class="container">
-            <div class="grid-row">
-                <div class="grid-column mt2 span-half">
-                    <div class="mb1">
-                        <span>
-                            <a href="https://www.apple.com/ios/app-store/" class="link"><img class="download" src="img/ios.png" alt="Download on the App Store"></a>
-                        </span>
-                        <span>
-                            <a href="https://play.google.com/store" class="link"><img class="download" src="img/googleplay.png" alt="Download on Google Play"></a>
-                        </span>
-                    </div>
-                    <p class="small">Design by <a href="https://www.papayatemplates.com" class="link link--text">Papaya</a>. Illustrations from&nbsp;<a href="https://undraw.co/" class="link link--text">Undraw</a>.</p>
-                </div>
-                <div class="grid-column mt2 span-half align--right align--center-on-mobile">
-                    <ul class="no-bullets list--inline">
-                        <li class="mr1"><a href="" class="link"><img class="icon" src="img/youtube.svg" alt="YouTube"></a></li>
-                        <li class="mr1"><a href="" class="link"><img class="icon" src="img/twitter.svg" alt="Twitter"></a></li>
-                        <li><a href="" class="link"><img class="icon" src="img/facebook.svg" alt="Facebook"></a></li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </footer> -->
 
     <!-- Scroll reveal -->
     <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
